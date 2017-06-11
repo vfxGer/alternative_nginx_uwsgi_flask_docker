@@ -1,0 +1,12 @@
+version: '2'
+services:
+  web:
+    build: .
+    volumes:
+      - ./sockets:/sockets
+  server:
+    build: server
+    ports:
+      - 3000:80
+    volumes:
+      - ./sockets:/sockets
