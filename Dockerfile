@@ -1,4 +1,4 @@
-FROM python:2.7
+FROM python:3
 RUN pip install uwsgi==2.0.15
 RUN mkdir /client_uploads
 RUN mkdir /sockets
