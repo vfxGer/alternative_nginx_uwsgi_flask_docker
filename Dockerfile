@@ -1,5 +1,5 @@
-FROM python:3
-RUN pip install uwsgi
+FROM python:3.6.1
+RUN pip install uwsgi==2.0.15
 RUN mkdir /sockets
 ADD requirements.txt /
 RUN pip install -r /requirements.txt
